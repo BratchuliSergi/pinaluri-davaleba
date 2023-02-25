@@ -1,0 +1,403 @@
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 90px;
+
+}
+
+/* header */
+header {
+    max-width: inherit;
+    width: inherit;
+    font-family: 'rubik';
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #9EAEC5;
+    padding: 0 100px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1;
+
+}
+
+.header_logo {
+    color: #f7f5f2;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.25rem;
+    background-color: hwb(53 56% 25%);
+    width: 196px;
+    height: 100px;
+    border-radius: 0 0 60px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 2s;
+}
+
+.header_logo:hover {
+    font-size: 3rem;
+}
+
+li a {
+    font-weight: 700;
+}
+
+li a:hover {
+    border-bottom: 2px solid #623932;
+}
+
+ul {
+    display: flex;
+    gap: 47px;
+}
+
+.active {
+    color: #623932;
+
+}
+
+.noactive {
+    color: #fff;
+}
+
+.fa-cart-shopping {
+    font-size: 2.81rem;
+    color:#623932 ;
+}
+.fa-bars{
+    display: none;
+    color: white;
+    font-size: 3rem;
+}
+
+/* section1  */
+.section1 {
+    width: 100%;
+    height: 678px;
+    position: relative;
+    background-image: url(../photos/Rectangle\ 1\ \(5\).png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.section1_text {
+    width: 90%;
+    height: 117px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 6rem;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'rubik';
+    animation-name: section1_text;
+    animation-duration: 10s;
+    animation-timing-function: ease;
+
+}
+
+@keyframes section1_text {
+    from {
+        color: #0097d3;
+        width: 90%;
+    }
+
+    to {
+        color: rgb(255, 255, 255);
+        width: 100%;
+    }
+}
+
+
+
+
+/* section1- artwork  */
+
+
+.section1_div_artwork {
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #623932;
+    padding: 35px 38px 28px 34px;
+}
+
+h2 {
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'Rubik';
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 41px;
+}
+
+.sec1_txt {
+    color: #FFFFFF;
+    font-family: 'Rubik';
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: justify;
+
+}
+
+
+/* article  */
+
+
+article {
+    width: 100%;
+    /* height: 1328px; */
+    background-color: #6A7B98;
+    text-align: center;
+    padding: 70px 50px;
+
+}
+
+.cards {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    gap: 68px;
+    flex-wrap: wrap;
+
+
+}
+
+.card {
+    background-color: white;
+    width: 28%;
+    /* height: 455px; */
+    padding-top: 33px;
+    padding-bottom: 30px;
+    padding-left: 28px;
+    padding-right: 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+
+}
+
+.card:hover {
+    cursor: pointer;
+    box-shadow: 40px 40px 30px black;
+    transition-duration: 2s;
+}
+
+.card_img {
+    width: 90%;
+    margin-bottom: 56px;
+}
+
+.card_img:hover {
+    /* transform: scale(1.5); */
+    transition-duration: 2s;
+    transition: 2s;
+    filter: grayscale(100%);
+}
+
+h3 {
+    margin-bottom: 150px;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.card_text {
+    font-size: 2rem;
+}
+
+/* section2  */
+.section2 {
+    width: 100%;
+    padding: 90PX 0 84PX 0;
+    background-color: #6A7B98;
+}
+
+.section2_div {
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    padding: 32px 65px 35px 65px;
+    background-color: hsl(218, 29%, 95%, 0.678);
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sec2_contact_div {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.call_div,
+.email_div,
+.location_div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.icons {
+    font-size: 3.125rem;
+    color: red;
+}
+
+.p1 {
+    font-size: 1.5rem;
+    color: #623932;
+}
+
+.p2 {
+    font-size: 1.25rem;
+    margin-top: 3px;
+}
+
+form {
+    width: 55%;
+
+}
+
+.sec2_information_div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 121px;
+}
+
+label {
+    color: #f90e0e;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.info_div {
+    width: 48%;
+
+}
+
+#name,
+#email {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    border-bottom: 4px solid white;
+    outline: none;
+}
+
+#message {
+    width: 100%;
+    height: 147px;
+    border-radius: 10px;
+    resize: none;
+    background-color: transparent;
+    border: 3px solid white;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    font-family: 'Rubik';
+    font-size: 1.5rem;
+    font-weight: 300;
+
+
+}
+
+textarea::placeholder {
+    font-size: 1.5rem;
+    color: white;
+}
+
+button {
+    background-color: red;
+    color: white;
+    width: 50%;
+    height: 88px;
+    font-weight: 700;
+    font-size: 2.25rem;
+    font-family: 'Rubik';
+    transition: linear .4s;
+
+}
+
+button:hover {
+    cursor: pointer;
+    border-radius: 30px;
+
+}
+
+/* footer  */
+
+
+footer {
+    max-width: 100%;
+    height: 190px;
+    padding: 77px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #C0BA8F;
+}
+
+.footer_icons {
+    display: flex;
+    gap: 50px;
+}
+
+.footer_text {
+    color: #DDDBCB;
+}
+
+.fa-facebook-messenger,
+.fa-instagram,
+.fa-youtube {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.section2 {
+    background-color: #6A7B98;
+}
+
+.fa-facebook-messenger:hover {
+    color: dodgerblue;
+
+}
+
+.fa-facebook-messenger {
+    transition: linear 0.5s;
+
+}
+
+.fa-instagram {
+    transition: linear 0.5s;
+}
+
+.fa-instagram:hover {
+    color:mediumvioletred
+}
+
+.fa-youtube:hover {
+
+    color: red;
+
+}
+
+.fa-youtube {
+    transition: linear 0.5s;
+}
